@@ -28,7 +28,8 @@ else
     local gamelist = {
         [1511883870]  = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Shindo-Life",
         [5750914919] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Fisch.lua",
-        [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blox-Fruits.lua"
+        [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blox-Fruits.lua",
+        [1202096104] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Driving-Empire.lua"
     }
     local checkgame = gamelist[game.gameId]
 
