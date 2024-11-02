@@ -29,7 +29,8 @@ else
         [1511883870]  = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Shindo-Life",
         [5750914919] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Fisch.lua",
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blox-Fruits.lua",
-        [1202096104] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Driving-Empire.lua"
+        [1202096104] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Driving-Empire.lua",
+        [4093155512] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Sword-Burst3.lua"
     }
     local checkgame = gamelist[game.gameId]
 
