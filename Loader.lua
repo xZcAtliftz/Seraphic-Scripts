@@ -24,6 +24,19 @@ elseif _G.BountyMode then
     else
         game.Players.LocalPlayer:Kick("Game Not Support")
     end
+elseif _G.Scripts_Language == "Thailand" then
+    local gamelist = {
+        [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/BF_THAI.lua"
+    }
+    local checkgame = gamelist[game.gameId]
+
+    if gamelist[game.gameId] then
+        getgenv().AuthTime = tick()
+        print(checkgame)
+        loadstring(game:HttpGet(checkgame))()
+    else
+        game.Players.LocalPlayer:Kick("Game Not Support")
+    end
 else
     local gamelist = {
         [1511883870]  = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Shindo-Life",
