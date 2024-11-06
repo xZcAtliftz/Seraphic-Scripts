@@ -1,57 +1,39 @@
-if _G.KaitunMode then
-    local gamelist = {
+local gameLists = {
+    KaitunMode = {
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Kaitun.lua"
-    }
-    local checkgame = gamelist[game.gameId]
-
-    if gamelist[game.gameId] then
-        getgenv().AuthTime = tick()
-        print(checkgame)
-        loadstring(game:HttpGet(checkgame))()
-    else
-        game.Players.LocalPlayer:Kick("Game Not Support")
-    end
-elseif _G.BountyMode then
-    local gamelist = {
+    },
+    BountyMode = {
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Bounty.lua"
-    }
-    local checkgame = gamelist[game.gameId]
-
-    if gamelist[game.gameId] then
-        getgenv().AuthTime = tick()
-        print(checkgame)
-        loadstring(game:HttpGet(checkgame))()
-    else
-        game.Players.LocalPlayer:Kick("Game Not Support")
-    end
-elseif _G.Scripts_Language == "Thailand" then
-    local gamelist = {
+    },
+    Thailand = {
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/BF_THAI.lua"
-    }
-    local checkgame = gamelist[game.gameId]
-
-    if gamelist[game.gameId] then
-        getgenv().AuthTime = tick()
-        print(checkgame)
-        loadstring(game:HttpGet(checkgame))()
-    else
-        game.Players.LocalPlayer:Kick("Game Not Support")
-    end
-else
-    local gamelist = {
-        [1511883870]  = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Shindo-Life",
+    },
+    Default = {
+        [1511883870] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Shindo-Life",
         [5750914919] = "https://raw.githubusercontent.com/Losenry/REALXLOXERYY/main/Library/Luxury/Aleonora.lua", -- Fisch
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blox-Fruits.lua",
         [1202096104] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Driving-Empire.lua",
         [4093155512] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Sword-Burst3.lua"
     }
-    local checkgame = gamelist[game.gameId]
+}
 
-    if gamelist[game.gameId] then
+local function loadGameScript(gameList)
+    local scriptUrl = gameList[game.gameId]
+    if scriptUrl then
         getgenv().AuthTime = tick()
-        print(checkgame)
-        loadstring(game:HttpGet(checkgame))()
+        print(scriptUrl)
+        loadstring(game:HttpGet(scriptUrl))()
     else
         game.Players.LocalPlayer:Kick("Game Not Support")
     end
+end
+
+if _G.KaitunMode then
+    loadGameScript(gameLists.KaitunMode)
+elseif _G.BountyMode then
+    loadGameScript(gameLists.BountyMode)
+elseif _G.Scripts_Language == "Thailand" then
+    loadGameScript(gameLists.Thailand)
+else
+    loadGameScript(gameLists.Default)
 end
