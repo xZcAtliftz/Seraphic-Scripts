@@ -15,7 +15,8 @@ local gameLists = {
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blox-Fruits.lua",
         [1202096104] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Driving-Empire.lua",
         [4093155512] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Sword-Burst3.lua",
-        [4777817887] = "https://raw.githubusercontent.com/Losenry/REALXLOXERYY/main/Library/Luxury/Raphael/B14D3B411.lua" -- Blade Ball
+        [4777817887] = "https://raw.githubusercontent.com/Losenry/REALXLOXERYY/main/Library/Luxury/Raphael/B14D3B411.lua", -- Blade Ball
+        [6325068386] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blue-Lock.lua" -- Blue Lock Rivals
     }
 }
 
