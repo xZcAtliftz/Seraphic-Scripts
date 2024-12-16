@@ -6,7 +6,7 @@ local gameLists = {
         [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Bounty.lua"
     },
     Thailand = {
-        [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/BF_THAI.lua",
+        [994732206] = "https://raw.githubusercontent.com/xZcAtliftz/Seraphic-Scripts/main/Blox-Fruits.lua",
         [5750914919] = "https://raw.githubusercontent.com/Losenry/REALXLOXERYY/main/Library/Luxury/Raphael/Thailand.zen"
     },
     Default = {
